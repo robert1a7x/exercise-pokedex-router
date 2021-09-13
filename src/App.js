@@ -4,6 +4,7 @@ import './App.css';
 import pokemons from './data';
 import Pokedex from './Pokedex';
 import NavList from './NavList';
+import PokemonDetails from './PokemonDetails';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <h1> Pokedex </h1>
         <NavList />
         <Route exact path="/" component={(props) => <Pokedex {...props} pokemons={pokemons} />} />
+        <Route exact path="/pokemons/:id" component={ PokemonDetails } />
       </div>
     </BrowserRouter>
   );
