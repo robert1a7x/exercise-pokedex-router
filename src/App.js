@@ -13,7 +13,7 @@ function App() {
         <h1> Pokedex </h1>
         <NavList />
         <Route exact path="/" component={(props) => <Pokedex {...props} pokemons={pokemons} />} />
-        <Route exact path="/pokemons/:id" component={ PokemonDetails } />
+        <Route exact path="/pokemons/:id" component={(props) => <PokemonDetails {...props} data={ pokemons } /> } />
       </div>
     </BrowserRouter>
   );

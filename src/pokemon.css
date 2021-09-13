@@ -9,3 +9,36 @@
   border-radius: 10px;
   padding: 30px;
 }
+
+.pokemon-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 25%;
+  margin: 10px 10px;
+  border: 1px gray solid;
+  border-radius: 10px;
+  padding: 30px;
+  width: 350px;
+}
+
+.pokemon-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+h3 {
+  margin: 30px 0;
+}
+
+.sumary {
+  margin-bottom: 40px;
+}

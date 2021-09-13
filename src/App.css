@@ -6,12 +6,16 @@ ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  padding: 0;
 }
 
 li {
   margin: 0 15px;
 }
 
-.detail-link {
-  
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
 }
