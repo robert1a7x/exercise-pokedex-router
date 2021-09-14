@@ -6,6 +6,7 @@ import Pokedex from './Pokedex';
 import NavList from './NavList';
 import PokemonDetails from './PokemonDetails';
 import About from './About';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/" component={(props) => <Pokedex {...props} pokemons={pokemons} />} />
           <Route exact path="/pokemons/:id" component={(props) => <PokemonDetails {...props} data={ pokemons } /> } />
           <Route path="/about" component={ About } />
+          <Route component={ NotFound } />
         </Switch>
       </div>
     </BrowserRouter>

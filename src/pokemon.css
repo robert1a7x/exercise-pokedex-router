@@ -30,6 +30,7 @@
 
 .map {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
   margin-top: 50px;
